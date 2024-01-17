@@ -3,7 +3,10 @@ import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Toonie Tracker',
+  title: {
+    template: '%s | Toonie Tracker',
+    default: 'Toonie Tracker',
+  },
   description:
     'A lightly modified version of the official Next.js Course Dashboard, built with App Router',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
